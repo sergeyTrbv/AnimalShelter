@@ -5,6 +5,12 @@
     <value-preview-text-wrapping value="false" />
     <value-preview-pinned value="false" />
   </component>
+  <component name="DBNavigator.Project.DatabaseBrowserManager">
+    <autoscroll-to-editor value="false" />
+    <autoscroll-from-editor value="true" />
+    <show-object-properties value="true" />
+    <loaded-nodes />
+  </component>
   <component name="DBNavigator.Project.DatabaseConsoleManager">
     <connection id="50a4ce24-0069-41ad-91f0-3598939b1918">
       <console name="AnimalShelter" type="STANDARD" schema="AnimalShelter" session="Main" />
@@ -14,16 +20,16 @@
     <last-used-providers />
   </component>
   <component name="DBNavigator.Project.DatabaseFileManager">
-    <open-files />
+    <open-files>
+      <object connection-id="50a4ce24-0069-41ad-91f0-3598939b1918" object-ref="schemas/public/tables/animal_report_data" />
+    </open-files>
   </component>
   <component name="DBNavigator.Project.DatasetFilterManager">
     <filter-actions connection-id="50a4ce24-0069-41ad-91f0-3598939b1918" dataset="public.animal_report_data" active-filter-id="EMPTY_FILTER" />
     <filter-actions connection-id="50a4ce24-0069-41ad-91f0-3598939b1918" dataset="public.cat" active-filter-id="EMPTY_FILTER" />
-    <filter-actions connection-id="50a4ce24-0069-41ad-91f0-3598939b1918" dataset="public.databasechangeloglock" active-filter-id="EMPTY_FILTER" />
     <filter-actions connection-id="50a4ce24-0069-41ad-91f0-3598939b1918" dataset="public.dog" active-filter-id="" />
     <filter-actions connection-id="50a4ce24-0069-41ad-91f0-3598939b1918" dataset="public.cat_owner" active-filter-id="EMPTY_FILTER" />
     <filter-actions connection-id="50a4ce24-0069-41ad-91f0-3598939b1918" dataset="public.animal_report_photo" active-filter-id="EMPTY_FILTER" />
-    <filter-actions connection-id="50a4ce24-0069-41ad-91f0-3598939b1918" dataset="public.databasechangelog" active-filter-id="EMPTY_FILTER" />
     <filter-actions connection-id="50a4ce24-0069-41ad-91f0-3598939b1918" dataset="public.dog_owner" active-filter-id="EMPTY_FILTER" />
   </component>
   <component name="DBNavigator.Project.ObjectQuickFilterManager">
@@ -87,14 +93,7 @@
           <max-connection-pool-size value="7" />
           <alternative-statement-delimiter value="" />
         </details>
-        <debugger>
-          <compile-dependencies value="true" />
-          <tcp-driver-tunneling value="false" />
-          <tcp-host-address value="" />
-          <tcp-port-from value="4000" />
-          <tcp-port-to value="4999" />
-        </debugger>
-        <object-filters hide-empty-schemas="false" hide-pseudo-columns="false" hide-audit-columns="false">
+        <object-filters hide-empty-schemas="false" hide-pseudo-columns="false">
           <object-type-filter>
             <object-type name="SCHEMA" enabled="true" />
             <object-type name="USER" enabled="true" />
@@ -276,7 +275,6 @@
       <confirmations>
         <save-changes value="false" />
         <revert-changes value="true" />
-        <exit-on-changes value="ASK" />
       </confirmations>
     </code-editor-settings>
     <code-completion-settings>
@@ -477,6 +475,7 @@
       </compiler>
       <debugger>
         <debugger-type value="ASK" />
+        <use-generic-runners value="true" />
       </debugger>
     </operation-settings>
     <ddl-file-settings>
@@ -523,5 +522,8 @@
         </visibility-settings>
       </environment>
     </general-settings>
+  </component>
+  <component name="DBNavigator.Project.StatementExecutionManager">
+    <execution-variables />
   </component>
 </project>
