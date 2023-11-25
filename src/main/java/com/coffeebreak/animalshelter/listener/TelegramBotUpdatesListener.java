@@ -10,8 +10,6 @@ import com.coffeebreak.animalshelter.repositories.AnimalReportDataRepository;
 import com.coffeebreak.animalshelter.repositories.CatOwnerRepository;
 import com.coffeebreak.animalshelter.repositories.DogOwnerRepository;
 import com.coffeebreak.animalshelter.services.AnimalReportDataService;
-import com.coffeebreak.animalshelter.services.CatOwnerService;
-import com.coffeebreak.animalshelter.services.DogOwnerService;
 import com.pengrad.telegrambot.TelegramBot;
 import com.pengrad.telegrambot.UpdatesListener;
 import com.pengrad.telegrambot.model.File;
@@ -43,23 +41,18 @@ public class TelegramBotUpdatesListener implements UpdatesListener {
     private final CatOwnerRepository catOwnerRepository;
     private final DogOwnerRepository dogOwnerRepository;
     private final AnimalReportDataService reportDataService;
-    private final CatOwnerService catOwnerService; // check
-    private final DogOwnerService dogOwnerService; // check
     private final Logger logger = LoggerFactory.getLogger(TelegramBotUpdatesListener.class);
 
     public TelegramBotUpdatesListener(
             TelegramBot telegramBot, AnimalShelterKeyboard animalShelterKeyboard,
             AnimalReportDataRepository reportDataRepository, CatOwnerRepository catOwnerRepository,
-            DogOwnerRepository dogOwnerRepository, AnimalReportDataService reportDataService,
-            CatOwnerService catOwnerService, DogOwnerService dogOwnerService) {
+            DogOwnerRepository dogOwnerRepository, AnimalReportDataService reportDataService) {
         this.telegramBot = telegramBot;
         this.animalShelterKeyboard = animalShelterKeyboard;
         this.reportDataRepository = reportDataRepository;
         this.catOwnerRepository = catOwnerRepository;
         this.dogOwnerRepository = dogOwnerRepository;
         this.reportDataService = reportDataService;
-        this.catOwnerService = catOwnerService;
-        this.dogOwnerService = dogOwnerService;
     }
 
     private Long daysOfReports;
