@@ -23,6 +23,19 @@
 
  ------
 
+## Запуск приложения
+- Откройте проект в вашей IDE;
+- В конфигурационном файле application.properties укажите ваши данные для доступа к базе данных;
+- Укажите токен Telegram бота, на котором хотите запустить приложение. 
+Для этого зайдите в свою IDE, нажмите на вкладку Run, выберите Edit Configurations.
+Появится окно, в нем нажмите Modify options и выберите Add VM options.
+Появится новое поле, в котором введите -Dtelegram.bot.token= и вставьте ваш токен.
+Примените введенные значения путем нажатия на кнопку apply и Ok.
+- Запустите метод main в файле AnimalShelterApplication.java;
+- Готово!
+
+ ------
+
 ### (EN)
 # PROJECT DESCRIPTION
 * Project name: Animal shelter
@@ -44,3 +57,16 @@
 - [Sokol Alexander](https://github.com/porovoz)
 - [Turabov Sergey](https://github.com/sergeyTrbv)
 - [Tsyretorova Tsyrena](https://github.com/Tsyrena24)
+ 
+------
+
+## How to run an application
+- Open project in your IDE;
+- Insert your data to access to the database in application.properties configuration file;
+- Specify Telegram bot token which you got in Telegram bot registration process.
+  To do this you need to open your IDE, click on tab Run than choose Edit Configurations.
+  In appeared window click Modify options and choose Add VM options.
+  Enter -Dtelegram.bot.token= and insert your token in new appeared field.
+  Apply new data by clicking on buttons Apply and Ok.
+- Then run main method in AnimalShelterApplication.java file;
+- Done!
