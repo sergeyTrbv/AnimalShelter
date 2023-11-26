@@ -54,7 +54,7 @@
 
 - [Borisova Irina](https://github.com/Qwaieare)
 - [Ovchinnikov Andrey](https://github.com/andrydo2009)
-- [Sokol Alexander](https://github.com/porovoz)
+- [Sokol Aleksander](https://github.com/porovoz)
 - [Turabov Sergey](https://github.com/sergeyTrbv)
 - [Tsyretorova Tsyrena](https://github.com/Tsyrena24)
  
